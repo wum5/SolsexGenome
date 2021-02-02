@@ -1,0 +1,38 @@
+proteins_fasta: ./sapp.all.maker.proteins.renamed.fasta
+interpro_database: /N/dc2/projects/solanumgenome/library/interpro.xml
+interpro_result: ./interpro_result.raw
+token_score_bit_score_weight: 0.5
+token_score_database_score_weight: 0.3
+token_score_overlap_score_weight: 0.2
+output: ./ahrd_output.csv
+
+blast_dbs:
+  swissprot:
+    weight: 100
+    file: ./sapp_vs_uniprot.blastp
+    database: ./uniprot_sprot.fasta
+    blacklist: ./blacklist_descline.txt
+    filter: ./filter_descline_sprot.txt
+    token_blacklist: ./blacklist_token.txt
+    description_score_bit_score_weight: 0.2
+
+  tair:
+    weight: 75
+    file: ./sapp_vs_TAIR.blastp
+    database: ./TAIR10_pep_20101214.fasta
+    fasta_header_regex: "^>(?<accession>[aA][tT][0-9mMcC][gG]\\d+(\\.\\d+)?)\\s+\\|[^\\|]+\\|\\s+(?<description>[^\\|]+)(\\s*\\|.*)?$"
+    blacklist: ./blacklist_descline.txt
+    filter: ./filter_descline_tair.txt
+    token_blacklist: ./blacklist_token.txt
+    description_score_bit_score_weight: 0.4
+
+  itag:
+    weight: 75
+    file: ./sapp_vs_ITAG.blastp
+    database: ./ITAG3.2_proteins.fasta
+    fasta_header_regex: "^>(?<accession>Solyc[0-9][0-9]g\\d+(\\.\\d+\\.\\d+)?)\\s+(?<description>.*)?$"
+    blacklist: ./blacklist_descline.txt
+    filter: ./filter_descline_tair.txt
+    token_blacklist: ./blacklist_token.txt
+    description_score_bit_score_weight: 0.4
+    
