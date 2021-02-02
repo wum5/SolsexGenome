@@ -3,7 +3,9 @@ Solanum appendiculatum Genome Project
 
 
 ### Overview
-The scripts in this repository are to generate the outputs in Solanum appendiculatum genome project
+The scripts in this repository are to generate the outputs in Solanum appendiculatum genome project. 
+
+Cite the code: [![DOI](https://zenodo.org/badge/335422963.svg)](https://zenodo.org/badge/latestdoi/335422963)
 
 
 ### Contributors 
