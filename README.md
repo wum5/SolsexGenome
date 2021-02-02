@@ -1,25 +1,5 @@
----
-title: "Solanum appendiculatum Genome Project"
----
-
-<style type="text/css">
-h1.title {
-  font-size: 32px;
-  color: DarkRed;
-}
-h3 { 
-  margin-top: 36px;
-}
-h4 { 
-  margin-top: 24px;
-}
-body{ /* Normal  */
-      font-size: 16px;
-  }
-pre { /* Code block - determines code spacing between lines */
-    font-size: 16px;
-}
-</style>
+Solanum appendiculatum Genome Project
+=================
 
 
 ### Overview
